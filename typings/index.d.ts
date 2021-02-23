@@ -3,6 +3,20 @@ import { opus as Opus, FFmpeg } from 'prism-media';
 import { Readable, Duplex } from 'stream';
 
 declare module 'discord-spdl-core' {
+  interface SPDLStreamOptions extends downloadOptions {
+      seek?: number;
+      encoderArgs?: string[];
+      fmt?: string;
+      opusEncoded?: boolean;
+  }
+
+  interface StreamOptions {
+      seek?: number;
+      encoderArgs?: string[];
+      fmt?: string;
+      opusEncoded?: boolean;
+  }
+
   namespace spdl {
     interface trackInfo {
       /**
@@ -37,20 +51,6 @@ declare module 'discord-spdl-core' {
        * A link to a 30 second preview (MP3 format) of the track. Can be null
        */
       preview_url: string;
-    }
-
-    interface SPDLStreamOptions extends downloadOptions {
-        seek?: number;
-        encoderArgs?: string[];
-        fmt?: string;
-        opusEncoded?: boolean;
-    }
-
-    interface StreamOptions {
-        seek?: number;
-        encoderArgs?: string[];
-        fmt?: string;
-        opusEncoded?: boolean;
     }
 
     /**
