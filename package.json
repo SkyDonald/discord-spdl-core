@@ -1,0 +1,73 @@
+{
+  "name": "discord-spdl-core",
+  "version": "1.0.0",
+  "description": "Spotify track downloader module. Written in pure javascript.",
+  "main": "lib/index.js",
+  "dependencies": {
+    "discord-ytdl-core": "^5.0.0",
+    "node-fetch": "^2.6.1",
+    "spotify-web-api-node": "^5.0.2",
+    "youtube-sr": "^4.0.1",
+    "ytdl-core": "^4.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.1",
+    "@types/node": "^14.14.31",
+    "@types/spotify-web-api-node": "^5.0.0",
+    "fs": "^0.0.1-security",
+    "stream": "^0.0.2",
+    "typescript": "^4.1.5"
+  },
+  "scripts": {
+    "test": "node test/index",
+    "publish": "git add . && git commit -m 'Update' && git push origin master",
+    "build": "babel src -d lib"
+  },
+  "keywords": [
+    "spotify",
+    "download",
+    "spotifydl",
+    "spotify-dl",
+    "api",
+    "dl",
+    "downloader",
+    "spotify-downloader",
+    "discord",
+    "discord-spotify",
+    "discord-music",
+    "discord-player",
+    "music",
+    "spdl-core",
+    "node-spdl",
+    "spdl",
+    "song",
+    "ffmpeg",
+    "encoder",
+    "encorerargs",
+    "bassboost",
+    "arbitrary"
+  ],
+  "author": "skydonald",
+  "license": "MIT",
+  "types": "./typings/index.d.ts",
+  "files": [
+    "build",
+    "typings"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SkyDonald/spdl-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SkyDonald/spdl-core/issues"
+  },
+  "homepage": "https://github.com/SkyDonald/spdl-core#readme",
+  "directories": {
+    "test": "test"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "engineStrict": true
+}
