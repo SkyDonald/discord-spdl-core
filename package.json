@@ -1,6 +1,6 @@
 {
   "name": "discord-spdl-core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Spotify track downloader module. Written in pure javascript.",
   "main": "lib/index.js",
   "dependencies": {
@@ -39,6 +39,7 @@
     "discord-player",
     "music",
     "spdl-core",
+    "discord-spdl-core",
     "node-spdl",
     "spdl",
     "song",
@@ -57,12 +58,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/SkyDonald/spdl-core.git"
+    "url": "git://github.com/SkyDonald/discord-spdl-core.git"
   },
   "bugs": {
-    "url": "https://github.com/SkyDonald/spdl-core/issues"
+    "url": "https://github.com/SkyDonald/discord-spdl-core/issues"
   },
-  "homepage": "https://github.com/SkyDonald/spdl-core#readme",
+  "homepage": "https://github.com/SkyDonald/discord-spdl-core#readme",
   "directories": {
     "test": "test"
   },

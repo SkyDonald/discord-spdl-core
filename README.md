@@ -24,7 +24,7 @@ You can contact us for support on our [chat server](https://discord.gg/AUfTUJA)
 
 ```js
 const fs = require('fs');
-const spdl = require('discord-spdl-core');
+const spdl = require('discord-spdl-core').default;
 // Typescript: import spdl from 'discord-spdl-core';
 
 spdl.getInfo('https://open.spotify.com/track/3fjmSxt0PskST13CSdBUFx?si=e420cd3a80834011').then(infos => {
@@ -127,7 +127,7 @@ client.on('message', async (msg) => {
       .play(await spdl(url, {
         opusEncoded: true,
         filter: 'audioonly',
-        encoderArgs: ['-af', 'bass=g=10']
+        encoderArgs: ['-af', 'apulsator=hz=0.09']
       }))
       .on('error', e => console.error(e));
     const infos = await spdl.getInfo(url);
